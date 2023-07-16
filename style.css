@@ -1,0 +1,60 @@
+/* Styles for the game container */
+#game-container {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.body{
+  background-color: rgb(146, 140, 230);
+}
+
+/* Styles for the tiles */
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 80px;
+  height: 80px;
+  margin: 2px;
+  background-color: #08022b;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tile.empty {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Styles for the best times leaderboard */
+#best-times {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#best-times h3 {
+  font-size: 20px;
+}
+
+#best-times li {
+  font-size: 18px;
+}
+
+/* Button style */
+#reset-button {
+  font-size: 18px;
+}
+
+/* Additional styles for responsiveness */
+@media screen and (max-width: 576px) {
+  .tile {
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+  }
+}
